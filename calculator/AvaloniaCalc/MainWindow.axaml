@@ -1,0 +1,55 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="350" d:DesignHeight="500"
+        Width="350" Height="500"
+        WindowStartupLocation="CenterScreen"
+        x:Class="AvaloniaCalc.MainWindow"
+        Title="CALCULATOR">
+        
+    <StackPanel Orientation="Vertical">
+            
+            <TextBlock Margin="30" Text="122212" FontSize="48" x:Name="labelResult" />
+
+        <StackPanel Orientation="Horizontal" Margin="30,0,0,10">
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="7" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="8" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="9" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Content="%" Click="Number_OnClick" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="30,0,0,10">
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="4" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="5" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="6" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Content="-" Width="65" Click="Number_OnClick" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="30,0,0,10">
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="1" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="2" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Margin="0,0,10,0" Click="Number_OnClick" Content="3" Width="65" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+            <Button Content="+" Width="65" Click="Number_OnClick" Height="65" FontSize="30"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="30,0,0,10">
+        <Button Content="0" Margin="0,0,10,0" Click="Number_OnClick" Width="215" Height="70" FontSize="30" HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center" />
+        <Button Margin="0,0,0,0" Click="Number_OnClick" Content="*" Width="65" Height="70" FontSize="30"
+                HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        </StackPanel>
+    </StackPanel>
+</Window>
